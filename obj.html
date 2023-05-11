@@ -1,0 +1,10 @@
+<script>
+    var personPrototype={
+        greet:function(){
+            console.log('Hello, my name is'+ this.name);
+        }
+    };
+    var person=Object.create(personPrototype);
+    person.name='Lekhan';
+    person.greet();
+</script>
